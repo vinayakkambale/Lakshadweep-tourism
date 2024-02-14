@@ -1,0 +1,172 @@
+/* Add your custom CSS styles here */
+
+/* Add a background color to the navbar when scrolled */
+.navbar-scrolled {
+    background-color: #ffffff; /* Change to your desired color */
+}
+
+/* Add shadow to the navbar when scrolled */
+.navbar-scrolled.navbar-light {
+    box-shadow: 0 4px 6px -1px rgba(0,0,0,.1);
+}
+
+
+
+*{
+    font-family:montserrat;
+}
+body {
+    background: #f1fbff;
+}
+.section-padding {
+    padding: 100px 0;
+}
+.carousel-item{
+    height: 100vh;
+    min-height: 300px;
+}
+.carousel-caption {
+    bottom: 220px;
+    z-index: 2;
+}
+.carousel-caption h2 {
+    font-size: 35px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    margin-top: 25px;
+}
+.carousel-caption p{
+    width: 60%;
+    margin: auto;
+    font-size: 18px;
+    line-height: 1.9;
+    height: 150px;
+}
+.carousel-inner::before{
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background: rgba(0, 0, 0, 0.5);
+    z-index: 1;
+}
+
+.navbar-nav a {
+    font-size: 15px;
+    text-transform: uppercase;
+    font-weight: 500;
+}
+.navbar-light .navbar-brand {
+    color: #000;
+    font-size: 25px;
+    text-transform: uppercase;
+    font-weight: 700;
+    letter-spacing: 2px;
+
+}
+.navbar-light .navbar-brand:focus,
+.navbar-light .navbar-brand:hover{
+    color: #000;
+}
+.navbar-light .navbar-nav .navbar-link {
+    color: #000;
+}
+.w-100 {
+    height: 100vh;
+}
+
+.carousel-item img{
+    display: flex;
+    margin: auto;
+    height: 100%;
+    width: 100%;
+}
+.carousel-indicators{
+    
+}
+
+.stays .card-body i {
+    font-size: 50px;
+}
+.place .card-body i {
+    font-size: 20px;
+}
+.stays .card{
+    box-shadow: 15px 15px 40px rgba(24, 120, 188, 0.35);
+}
+ 
+.lakshadweep .card{
+    box-shadow: 15px 15px 40px rgba(0, 0, 0, 0.15);
+}
+.place .card{
+    box-shadow: 15px 15px 40px rgba(0, 0, 0, 0.15);
+}
+
+
+#scrollToTopBtn {
+    display: ''; /* Hide the button by default */
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    z-index: 99;
+    font-size: 18px;
+    border: none;
+    outline: none;
+    background-color: #34c1e4;
+    color: white;
+    cursor: pointer;
+    padding: 15px;
+    border-radius: 50%;
+}
+
+#scrollToTopBtn:hover {
+    background-color: #0bbce9;
+}
+
+/*    responsive screen     */
+@media only screen and (min-width: 768px) and (max-width: 991px){
+    .carousel-caption{
+        bottom: 370px;
+    }
+    .carousel-caption p{
+        width: 100%;
+    }
+    .card{
+        margin-bottom: 30px;
+    }
+    .img-area img{
+        width: 100%;
+    }
+}
+
+@media only screen and (max-width: 767px) {
+    .navbar-nav {
+        text-align: center;
+    }
+    .carousel-caption {
+        bottom: 125px;
+    }
+    .carousel-caption h2{
+        font-size: 15px;
+    }
+    .carousel-caption a{
+        padding: 10px 15px;
+    }
+    .carousel-caption p{
+        width: 100%;
+        line-height: 1.6;
+        font-size: 12px;
+    }
+    .about-text{
+        padding-top: 50px;
+    }
+    .card{
+        margin-bottom: 30px;
+    }
+
+
+
+}
+
